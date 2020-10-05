@@ -1,25 +1,59 @@
 .wrapper {
   display: flex;
-  height: 100vh;
 }
 
 /* side-bar */
 
 .side-bar {
   width: 300px;
+  height: 100vh;
   background-color: #253141;
 }
+
+/* side-header */
 
 .side-header {
   height: 100px;
   padding: 0 20px;
   background-color: #253141;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.side-main {
+.header-name a {
+  font-size: 16px;
+  color: #fafafa;
+  text-decoration: none;
+}
+
+.header-link {
+  font-size: 10px;
+}
+
+.header-link a {
+  border: 1px solid lightblue;
+  color: deepskyblue;
+  padding: 14px;
+  text-decoration: none;
+}
+
+/* rooms */
+
+.rooms {
   height: calc(100vh - 100px);
   background-color: #2f3e51;
   padding: 0 20px;
+  overflow: scroll;
+}
+
+.room {
+  padding: 20px 0 40px;
+}
+
+.room-name a {
+  text-decoration: none;
+  color: white;
 }
 
 /* main */
@@ -29,18 +63,44 @@
   background-color: #ffffff;
 }
 
+/* main-header */
+
 .main-header {
   height: 100px;
   padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.main-main {
+.main-title {
+  margin-top: 36px;
+  color: #333333;
+  font-size: 40px;
+}
+
+.end-tab {
+  margin-top: 40px;
+}
+
+.end-tab a {
+  color: darkred;
+  text-decoration: none;
+  border: 1px solid darkred;
+  color: darkred;
+  padding: 20px;
+}
+
+/* messages */
+
+.messages {
   height: calc(100vh - 190px);
   background-color: #fafafa;
   padding: 46px 40px 0;
 }
 
-.main-footer {
+/* forms */
+
+.forms {
   height: 90px;
   background-color: #dddddd;
   padding: 0 20px;
